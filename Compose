@@ -1,3 +1,5 @@
+https://www.techrepublic.com/article/update-portainer-latest-version/
+
 Portainer with both ports 9000 and 8000. The Edge Agent uses port 8000 so this is a must.
 
 docker run -d \
