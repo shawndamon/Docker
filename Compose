@@ -1,0 +1,10 @@
+Portainer with both ports 9000 and 8000. The Edge Agent uses port 8000 so this is a must.
+
+docker run -d \
+--name="portainer" \
+--restart on-failure \
+-p 9000:9000 \
+-p 8000:8000 \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-v portainer_data:/data \
+portainer/portainer-ce:latest
